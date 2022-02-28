@@ -5,6 +5,7 @@ import LessonII from './lessons/LessonII';
 import LessonIII from './lessons/LessonIII';
 import LessonIV from './lessons/LessonIV';
 import LessonV from './lessons/LessonV';
+import Magic from './FreeCodeCamp/ES6/Less3';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         {/* <LessonII /> */}
         {/* <LessonIII /> */}
         {/* <LessonIV /> */}
-        <LessonV />
+        <Magic />
 
 
       </header>
