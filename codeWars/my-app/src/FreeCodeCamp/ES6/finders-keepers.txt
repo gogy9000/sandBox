@@ -1,0 +1,11 @@
+function findElement(arr, func) {
+  let boolinArr = arr.map(func);
+  console.log(boolinArr)
+  let num =undefined;
+  for(let i=0; boolinArr[i]===false; i++){
+    num=arr[i+1]
+  }
+  return num
+}
+
+console.log(findElement([1, 3, 5, 9], num => num % 2 === 0));
