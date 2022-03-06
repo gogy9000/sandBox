@@ -1,0 +1,7 @@
+function getIndexToIns(arr, num) {
+  let index=0
+  arr.map(el=>num>el?index++:index+=0)
+  return index;
+}
+
+console.log(getIndexToIns([40, 60], 50));
