@@ -1,0 +1,11 @@
+function mutation(arr) {
+  let word1= [...arr[0].toUpperCase()]
+  let word2= [...arr[1].toUpperCase()]
+  console.log(word1)
+  console.log(word2)
+  
+  
+  return word2.every((el)=>word1.includes(el))
+}
+
+console.log(mutation(["hello", "hey"]));
