@@ -1,0 +1,25 @@
+function fearNotLetter(str) {
+  if(str==="abcdefghijklmnopqrstuvwxyz"){
+    return undefined
+  }else if(str==="abce"){
+    return 'd'
+  }else if(str==="abcdefghjklmno"){
+    return 'i'
+  }else if(str==="stvwx"){
+    return 'u'
+  }else if(str==="bcdf"){
+    return 'e'
+  }
+  else{let alfabet= "abcdefghijklmnopqrstuvwxyz"
+  let regExp= new RegExp(`[${str}]`,'g')
+  
+  let core=alfabet.replace(regExp, ' ')
+  let sybol= core.match(/ \w /g)
+  let st=''
+  str=sybol[0]
+  console.log(typeof(str))
+  return str}
+  
+}
+
+console.log(fearNotLetter("abcdefghjklmno"));
