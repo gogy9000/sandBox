@@ -1,0 +1,8 @@
+function diffArray(arr1, arr2) {
+let arr4 = arr1.filter(el=> arr2.includes(el)? false:true).
+concat(arr2.filter(el=> arr1.includes(el)? false:true))
+
+  return arr4;
+}
+
+console.log(diffArray([1, 2, 3,5,8],[1, 2, 3, 5,8]));
