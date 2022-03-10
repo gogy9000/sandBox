@@ -1,0 +1,17 @@
+function myReplace(str, before, after) {
+  
+  let regExp= new RegExp(before)
+  if(/^[A-Z]/.test(before)&&(/^[a-z]/).test(after)){
+   let sumbol=after.match(/^\w/g)
+   let upCase=sumbol[0].toUpperCase()
+    let up=after.replace(/^\w/,upCase)
+    return str.replace(regExp,up)
+  }else if(/^[a-z]/.test(before)&&(/^[A-Z]/).test(after)){
+   let sumbol=after.match(/^\w/g)
+   let lowCase=sumbol[0].toLowerCase()
+    let low=after.replace(/^\w/,lowCase)
+    return str.replace(regExp,low)
+  }else{return str.replace(regExp,after)}
+}
+
+console.log(myReplace("I think we should look up there", "up", "Down"));
