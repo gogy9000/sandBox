@@ -1,9 +1,0 @@
-function translatePigLatin(str) {
-  console.log((/\b[qwrtpsdfghjklzxcvbnm]+/).test(str))
-  if(str==='rhythm'){return 'rhythmay'}
-  else if((/\b[qwrtpsdfghjklzxcvbnm]+/).test(str)){
-  return str.replace(/(\b[qwrtpsdfghjklzxcvbnm]+|\b[eyuioa]+)(\w+$)/gi,'$2$1ay')
-  }else{return str.replace(/(\b[qwrtpsdfghjklzxcvbnm]+|\b[eyuioa]+)(\w+$)/gi,'$1$2way')}
-}
-
-console.log(translatePigLatin("california"));

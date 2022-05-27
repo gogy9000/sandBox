@@ -1,9 +1,0 @@
-// Only change code below this line
-function urlSlug(title) {
-  return title.match(/\w+/gi)
-  .map(el=>el.toLowerCase()).join('-')
-
-
-}
-// Only change code above this line
-console.log(urlSlug(" Winter Is  Coming"));

@@ -1,6 +1,0 @@
-function titleCase(str) {
-   let lowerCaseStr = str.toLowerCase();
-   return lowerCaseStr.replace(/(^|\s)\S/g, function(a) {return a.toUpperCase()})
-}
-
-console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));

@@ -1,5 +1,0 @@
-function bouncer(arr) {
- return arr.filter(el=> el)
-}
-
-console.log(bouncer([null, NaN, 1, 2, undefined]));

@@ -1,8 +1,0 @@
-function destroyer(...arr) {
-  let arr1= arr.splice(1)
-  let arr2= arr[0].filter(el=>arr1.includes(el)?false:true)
-
-  return arr2;
-}
-
-console.log(destroyer([ 2, 3, 2, 3], 2, 3));

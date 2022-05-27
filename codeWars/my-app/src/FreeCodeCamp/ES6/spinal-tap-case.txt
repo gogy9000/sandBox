@@ -1,5 +1,0 @@
-function spinalCase(str) {
-  return str.match(/([A-Z]?[a-z]+)/g).join('-').toLowerCase()
-}
-
-console.log(spinalCase('AllThe-small Things'));
