@@ -45,18 +45,11 @@ export const currencyReducer = (state: CurrencyState = initialState, action: Cur
             return {...state, isBuying: action.payload.isBuying}
 
         case ACTIONS_TYPE.CHANGE_CURRENCY_FIELD_TYPE:
-            // @ts-ignore
-            console.log(state.currencies.find((item)=>
-                state.currentCurrency)[state.isBuying?"buyRate":'sellRate'])
 
             return {
                 ...state,
-                amountOfBYN: action.payload.amountOfBYN,
-                // @ts-ignore
-                amountOfCurrency:String(state.currencies.find((item)=>
-                    state.currentCurrency)[state.isBuying?"buyRate":'sellRate']*Number(action.payload.amountOfBYN)
-                )
-
+                amountOfBYN:action.payload.amountOfBYN,
+                amountOfCurrency:action.payload.amountOfCurrency
             }
 
         case ACTIONS_TYPE.CHANGE_CURRENT_CURRENCY:
